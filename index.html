@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, none-scale=1.0">
     <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <script src="https://kit.fontawesome.com/5d38fb97c4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Netflix</title>
 </head>
 <body class="bg-gray-500">
-    <div class="container mx-auto flex items-center gap-4">
-        <div class="card flex flex-col shrink-0 items-center bg-white/20 p-1 border-white/10 border-2 rounded-full">
+    <div class="main flex justify-center items-center gap-5">
+        <div class="card flex flex-col items-center bg-white/20 p-1 border-white/10 border-2 rounded-full">
             <a class="hover:bg-red-500 border-2 border-transparent rounded-full" href="#"><div><img class="p-1 m-2 " src="/images/play.png"></div></a>
             <a class="hover:bg-red-500 border-2 border-transparent rounded-full" href="#"><div><img class="p-1 m-2" src="/images/border.png"></div></a>
             <a class="hover:bg-red-500 border-2 border-transparent rounded-full" href="#"><div><img class="p-1 m-2" src="/images/tv.png"></div></a>
@@ -17,14 +18,38 @@
             <a class="hover:bg-red-500 border-2 border-transparent rounded-full" href="#"><div><img class="p-1 m-2" src="/images/house.png"></div></a>
             <a class="hover:bg-red-500 border-2 border-transparent rounded-full" href="#"><div><img class="p-1 m-2" src="/images/mag.png"></div></a>
         </div>
-        <div class="mainbox grow lg:grow-0 bg-white/20 backdrop-blur-md flex border-white/10 border-2 rounded-3xl text-white">
-            <!-- left side -->
-            <div class="left container flex-none flex-row rounded-l-3xl p-8 bg-blue-800">
-                left
+        <div class="side flex">
+            <!-- left portion -->
+            <div class="left">
+                <img class="netflix" src="/images/netflix-logo.png" alt="netflix logo">
+                <nav class="nav">
+                    <ul class="">
+                        <li class=""><i class="fa-solid fa-circle-play" style="color: #ff0000;"></i> Browse</li>
+                        <li class=""><i class="fa-regular fa-heart" style="color: #c0c0c0;"></i> Watchlist</li>
+                        <li class=""><i class="fa-solid fa-calendar-days" style="color: #c0c0c0;"></i> Coming Soon</li>
+                    </ul>
+                </nav>
+                <h5>New Trailers &#128293;</h5>
+                <div class="img-hold flex">
+                    <div class="relative">
+                        <img class="witcher" src="/images/witcher.jpeg" alt="">
+                        <div class="absolute bottom-0 left-0">
+                            wasd
+                        </div>
+                    </div>
+                    <div class="">
+                        <img class="witcher" src="/images/witcher.jpeg" alt="">
+                    
+                    </div>
+                    <div class="">
+                        <img class="witcher" src="/images/witcher.jpeg" alt="">
+                    
+                    </div>
+                </div>
             </div>
-            <!-- right side -->
-            <div class="right container rounded-r-3xl p-8 bg-rose-800">
-                right
+            <!-- right portion -->
+            <div class="right">
+                
             </div>
         </div>
     </div>
