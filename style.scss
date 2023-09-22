@@ -1,23 +1,19 @@
 @use 'app.css';
-
+html,body {
+    padding: 0;
+    margin: 0; 
+}
 body {
     background-image: url("/images/darkbedroom.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-width: 1100px ;
-    min-height: 650px ;
+    min-width: 1100px;
+    min-height: 650px;
 }
-img { 
+.card img { 
     width: 25px;
     height: 25px;
-}
-html,body,.main {
-    height: 100%;
-}
-.main {
-    height: 100%;
-    width: 100%;
 }
 .side {
     height: 95%;
@@ -28,40 +24,15 @@ html,body,.main {
 } 
 .left{
     width: 20%;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 40px 0 0 40px;
     display: flex;
     flex-direction: column;
-}
-.netflix {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-.nav {
-    margin: 15px 0 20px 0;
-}
-ul li {
-    margin: 15px auto;
-}
-h5 {
-    font-size: 25px;
 }
 .img-hold{
     flex-direction: column;
     justify-content: space-between;
     flex-grow:2;
     row-gap: 15px;
-}
-.witcher {
-    
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.bar {
-    width: 100%;
 }
 .play1 {
     width: 14px;
@@ -70,50 +41,26 @@ h5 {
 .play {
     padding: 4px 7px 4px 9px;
 }
+
+
 // i love you alexus <333
 .right {
     width: 80%;
     height: 100%;
-    padding: 30px;
-    background-color: chocolate;
     border-radius: 0 40px 40px 0 ;
 } 
-.first{
-    margin-right: 25px;
-}
-.second{
-    margin-right: 40px;
-}
-.arrow {
-    padding-top: 22px;
-}
 input[type="search"]{
     font-size: 13px;
     padding: 9px;
     width: 250px;
-
 }
 .microphone{
-    padding:22px 5px 12px 17px;
-}
-.bell {
-    padding: 22px 14px 0px 13px;
+    padding:19px 5px 0 17px;
 }
 .pfp {
-    width: 35px;
+    width: 25px;
     height: auto;
     margin-right: 10px;
-    height: 30px; 
-}
-.username {
-    line-height: 15px;
-}
-.end {
-    margin-left: auto;
-}
-.contain {
-    height: 100px;
-    object-fit: cover;
 }
 .plus {
     width: 40px;
@@ -126,4 +73,121 @@ input[type="search"]{
 .button2 {
     bottom: 10%;
     left: 5%;
+}
+.watch {
+    background-color: #E50A15;
+}
+.theSide {
+    right: 3%;
+    bottom:10%;
+}
+
+.fancy img:hover {
+    box-shadow: 0 0 5px 5px red;
+}
+.theSide img{
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+.popcorn {
+    height: 25%;
+    min-height: 25%;
+    max-height: 25%;
+}
+.mania {
+    height: 83%;
+}
+.mania>div {
+    width: 24%;
+    border-radius: 10px;
+}
+.upper {
+    border-radius: 10px;
+}
+.ready{ 
+    translate: 0 -25%;
+}
+.ash{
+    translate: 0 -10%;
+}
+// thank you for ash for helping me out, I was so drained. he helped me with this portion of the code
+.popShowTitle {
+    height: 30%;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    background-color: black;
+    line-height: 2vh;
+    padding: 3px 0 0 8px;
+    box-shadow: 0 0 55px 35px black;
+}
+.popShowTitle h6 {
+    font-size: 1.7vh;
+}
+.popShowTitle span {
+    font-size: 1vh;
+    color: rgb(180, 180, 180);
+}
+.continue {
+    height: 20%;
+}
+
+.continueImg {
+    height: 71%;
+    margin-top: 10px;
+}
+
+.conWatchTitle {
+    width: 24%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.conWatchTitle div:nth-child(2) {
+    position: absolute;
+    bottom: 40%;
+    left: 47%;
+    padding: .34vh .55vw;
+    border-radius: 50px;
+    font-size: .8em;
+}
+
+.conWatchTitle div:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0 0 55px 35px black;
+    background-color: black;
+}
+
+.conWatchTitle span {
+    position: absolute;
+    bottom: 10px;
+    left: 8px;
+    font-size: 1.5vh;
+    z-index: 1;
+}
+
+.playBar {
+    width: 10%;
+}
+
+.playBar :first-child {
+    background-color: red;
+    height: 2.5px;
+    margin-left: 8px;
+}
+
+.playBar :last-child {
+    background-color: grey;
+    height: 2.5px;
+    margin-right: 8px;
+}
+
+.mania>div,
+.conWatchTitle {
+    box-shadow: 0 0 10px 3px #533c38;
 }

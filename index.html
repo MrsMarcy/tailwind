@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, none-scale=1.0">
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Netflix</title>
 </head>
-<body class="bg-gray-500">
-    <div class="main flex justify-center items-center gap-5">
+<body class="bg-gray-500 h-full">
+    <div class="main w-full h-full flex justify-center items-center gap-5">
         <div class="card flex flex-col items-center bg-white/20 p-1 border-white/30 border-2 rounded-full backdrop-blur-md">
             <a class="hover:bg-red-500 border-1 border-transparent rounded-full" href="#"><div><img class="p-1 m-2 " src="/images/icons/play.png"></div></a>
             <a class="hover:bg-red-500 border-1 border-transparent rounded-full" href="#"><div><img class="p-1 m-2" src="/images/icons/border.png"></div></a>
@@ -20,35 +20,34 @@
         </div>
         <div class="side flex backdrop-blur-md">
             <!-- left portion -->
-            <div class="left">
-                <a href="#"><img class="netflix w-full h-auto" src="/images/netflix-logo.png" alt="netflix logo"></a>
-                <nav class="nav">
+            <div class="left bg-gray-500/20 p-7">
+                <a href="#"><img class="netflix mb-2 w-full h-auto" src="/images/netflix-logo.png" alt="netflix logo"></a>
+                <nav class="nav my-2">
                     <ul class="">
-                        <a href="#"><li class=""><i class="fa-solid fa-circle-play" style="color: #ff0000;"></i> Browse</li></a>
-                        <a href="#"><li class=""><i class="fa-regular fa-heart" style="color: #c0c0c0;"></i> Watchlist</li></a>
-                        <a href="#"><li class=""><i class="fa-solid fa-calendar-days" style="color: #c0c0c0;"></i> Coming Soon</li></a>
+                        <a href="#"><li class="my-2 xl:my-3"><i class="fa-solid fa-circle-play" style="color: #ff0000;"></i> Browse</li></a>
+                        <a href="#"><li class="my-2 xl:my-3"><i class="fa-regular fa-heart" style="color: #c0c0c0;"></i> Watchlist</li></a>
+                        <a href="#"><li class="my-2 xl:my-3"><i class="fa-solid fa-calendar-days" style="color: #c0c0c0;"></i> Coming Soon</li></a>
                     </ul>
                 </nav>
-                
                 <div class="img-hold flex">
                     <h5 class="text-base xl:text-xl">New Traliers &#128293;</h5>
                     <div class="rounded-2xl relative">
-                        <img class="witcher rounded-2xl" src="/images/finalbone.jpg" alt="picture of season 2">
-                        <div class="bar invisible xl:visible py-2 px-3 absolute bottom-0 left-0 flex justify-between bg-gray-500/40 rounded-b-2xl backdrop-blur-sm">
+                        <img class="w-full h-full rounded-2xl" src="/images/finalbone.jpg" alt="picture of season 2">
+                        <div class="w-full invisible xl:visible py-2 px-3 absolute bottom-0 left-0 flex justify-between bg-gray-500/40 rounded-b-2xl backdrop-blur-sm">
                             <p class="my-auto text-sm 2xl:text-base">Shadow and Bone</p>
                             <a href="#"><span class="play bg-white/20 rounded-full"><i class="fa-solid fa-play play1" style="color: #ffffff;"></i></span></a>
                         </div>
                     </div>
                     <div class="rounded-2xl relative">
-                        <img class="witcher rounded-2xl" src="/images/finalnight.jpg" alt="picture of night agent show">
-                        <div class="bar invisible xl:visible py-2 px-3 absolute bottom-0 left-0 flex justify-between bg-gray-500/40 rounded-b-2xl backdrop-blur-sm">
+                        <img class="w-full h-full rounded-2xl" src="/images/finalnight.jpg" alt="picture of night agent show">
+                        <div class="w-full invisible xl:visible py-2 px-3 absolute bottom-0 left-0 flex justify-between bg-gray-500/40 rounded-b-2xl backdrop-blur-sm">
                             <p class="my-auto text-sm 2xl:text-base">The Night Agent</p>
                             <a href="#"><span class="play bg-white/20 rounded-full"><i class="fa-solid fa-play play1" style="color: #ffffff;"></i></span></a>
                         </div>
                     </div>
                     <div class="rounded-2xl relative">
-                        <img class="witcher rounded-2xl" src="/images/witcher.jpeg" alt="the witcher page">
-                        <div class="bar invisible xl:visible py-2 px-3 absolute bottom-0 left-0 flex justify-between bg-gray-500/40 rounded-b-2xl backdrop-blur-sm">
+                        <img class="w-full h-full rounded-2xl" src="/images/witcher.jpeg" alt="the witcher page">
+                        <div class="w-full invisible xl:visible py-2 px-3 absolute bottom-0 left-0 flex justify-between bg-gray-500/40 rounded-b-2xl backdrop-blur-sm">
                             <p class="my-auto text-sm 2xl:text-base">The Witcher</p>
                             <a href="#"><span class="play bg-white/20 rounded-full"><i class="fa-solid fa-play play1" style="color: #ffffff;"></i></span></a>
                         </div>
@@ -56,49 +55,142 @@
                 </div>
             </div>
             <!-- right portion -->
-            <div class="right">
-                <div class="flex flex-row">
-                    <i class="arrow first fa-solid fa-chevron-left fa-lg" style="color: #c0c0c0;"></i>
-                    <i class="arrow second fa-solid fa-chevron-right fa-lg" style="color: #ffffff;"></i>
-                    <div class="flex">
-                        <i class="bg-gray-500/30 rounded-l-full fa-solid fa-microphone fa-lg microphone" style="color: #c0c0c0;"></i>
-                        <input class="bg-gray-500/30 rounded-r-full" type="search" placeholder="Search..." name="search">
-                    </div>
-                    <div class="flex end">
-                        <i class="bell rounded-full mr-4 bg-gray-500/30 justify-end fa-regular fa-bell fa-lg" style="color: #c0c0c0;"></i>
-                        <div class="flex flex-row p-2 rounded-full bg-gray-500/30 justify-end">
-                            <img class="pfp rounded-full" src="/images/my pfp.png" alt="my profile picture icon">
-                            <div >
-                                <p class="username">Alexus Rogerson<br>
-                                    @aalexuss</p>
-                                <p></p>
-                            </div>
+            <div class="right bg-gray-500/30 p-6">
+                <div class="flex">
+                    <i class="pt-5 mr-6 fa-solid fa-chevron-left fa-lg self-start" style="color: #c0c0c0;"></i>
+                    <i class="pt-5 mr-10 fa-solid fa-chevron-right fa-lg self-start" style="color: #ffffff;"></i>
+                    <div class="inline-block self-start">
+                        <div class="flex">
+                            <i class="bg-gray-500/30 rounded-l-full fa-solid fa-microphone fa-lg microphone" style="color: #c0c0c0;"></i>
+                            <input class="bg-gray-500/30 rounded-r-full" type="search" placeholder="Search..." name="search">
                         </div>
                     </div>
+                    <div class="inline-block ml-auto">
+                        <div class="flex ml-auto">
+                            <a href="#"><img class="rounded-full p-2 mr-4 w-8 my-auto h-8 bg-gray-500/30" src="images/icons/bell-regular.png" alt="bell"></a>
+                            <a href="#"><div class="flex flex-row p-2 rounded-full bg-gray-500/30 justify-end">
+                                <img class="pfp rounded-full" src="/images/my pfp.png" alt="my profile picture icon">
+                                <div>
+                                    <p class="leading-3 text-xs ">Alexus Rogerson<br>@aalexuss</p>
+                                </div>
+                            </div></a>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="py-4 relative">
+                <div class="py-3 relative">
                     <img class="w-full h-auto rounded-3xl" src="/images/peakyblinderscover.jpg" alt="peaky blinders cover">
                     <div class="title2 absolute ">
                         <img class="w-1/5 h-auto" src="images/peakyblinderstitle.png" alt="title card">
                         <p>2013 - Drama - 5 Seasons</p>
                     </div>
                     <div class="button2 inline absolute ">
-                        <a class=" py-2.5 px-6 bg-red-500 rounded-2xl" href="#">Watch</a>
+                        <a class="watch py-2.5 px-6 rounded-2xl" href="#">Watch</a>
                         <a class="" href="#"><img class="p-2 bg-gray-500 inline plus rounded-xl" src="images/icons/image.png" alt="plus icon"></a>
                     </div>
+                    <div class="theSide inline absolute flex gap-4">
+                        <div class="fancy "><img class="hover:scale-110" src="images/peaky1.jpg" alt=""></div>
+                        <div class="fancy "><img class="hover:scale-110" src="images/peaky3.webp" alt=""></div>
+                        <div class="fancy "><img class="hover:scale-110" src="images/peaky2.jpg" alt=""></div>
+                    </div>
                 </div>
-                <div class="flex w-full">
-                    <img class="w-full h-auto" src="/images/brooklyn-99.png" alt="">
-                    <img class="w-full h-auto" src="/images/ready-player-one.png" alt="">
-                    <img class="w-full h-auto" src="/images/money-heist.png" alt="">
-                    <img class="w-full h-auto" src="/images/ash-evil.png
-                    " alt="">
+                <div class="popcorn flex flex-col">
+                    <p class="">Popcorn Mania</p>
+                    <div class="mt-2.5 mania flex justify-between">
+                        <div class="overflow-hidden relative">
+                            <img class="upper object-cover" src="/images/brooklyn-99.png" alt="brooklyn-99">
+                            <div class="popShowTitle absolute bottom-0">
+                                <h6>Brooklyn Nine-Nine</h6>
+                                <div class="flex gap-2">
+                                    <span>2020</span>
+                                    <span>U/A 16+</span>
+                                    <span>7 Seasons</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden relative bottom-0">
+                            <img class="upper object-cover ready" src="/images/ready-player-one.png" alt="">
+                            <div class="popShowTitle absolute bottom-0">
+                                <h6>Ready Player One</h6>
+                                <div class="flex gap-2">
+                                    <span>2018</span>
+                                    <span>U/A 13+</span>
+                                    <span>2h 20m</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden relative bottom-0">
+                            <img class="upper object-cover" src="/images/money-heist.png" alt="">
+                            <div class="popShowTitle absolute bottom-0">
+                                <h6>Money Heist</h6>
+                                <div class="flex gap-2">
+                                    <span>2021</span>
+                                    <span>A</span>
+                                    <span>4 Seasons</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden relative bottom-0">
+                            <img class="upper object-cover ash" src="/images/ash-evil.png" alt="">
+                            <div class="popShowTitle absolute bottom-0">
+                                <h6>Ash vs. Evil Dead</h6>
+                                <div class="flex gap-2">
+                                    <span>2018</span>
+                                    <span>A</span>
+                                    <span>3 Seasons</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex w-full">
-                    <img class="w-full h-auto" src="/images/rednotice.png" alt="">
-                    <img class="w-full h-auto" src="/images/extraction.png" alt="">
-                    <img class="w-full h-auto" src="/images/adampro.png" alt="">
-                    <img class="w-full h-auto" src="/images/oldguard.png" alt="">
+                <div class="continue flex flex-col mt-2">
+                    <h4>Continue Watching</h4>
+                    <div class="continueImg flex justify-between">
+                        <div class="conWatchTitle">
+                            <img src="images/rednotice.png" alt="the rock">
+                            <div class="bg-black/20 backdrop-blur-md">
+                                <i class="fa-sharp fa-solid fa-play " style="color: #fff; "></i>
+                            </div>
+                            <span>Red Notice</span>
+                            <div class="playBar flex ">
+                                <hr class="w-1/3">
+                                <hr class="w-2/3">
+                            </div>
+                        </div>
+                        <div class="conWatchTitle">
+                            <img src="images/extraction.png" alt="fight">
+                            <div class="bg-black/20 backdrop-blur-md">
+                                <i class="fa-sharp fa-solid fa-play " style="color: #fff; "></i>
+                            </div>
+                            <span>Extraction</span>
+                            <div class="playBar flex ">
+                                <hr class="w-2/3">
+                                <hr class="w-1/3">
+                            </div>
+                        </div>
+                        <div class="conWatchTitle">
+                            <img src="images/adampro.png" alt="reyn">
+                            <div class="bg-black/20 backdrop-blur-md">
+                                <i class="fa-sharp fa-solid fa-play " style="color: #fff; "></i>
+                            </div>
+                            <span>The Adam Project</span>
+                            <div class="playBar flex ">
+                                <hr class="w-2/12">
+                                <hr class="w-10/12">
+                            </div>
+                        </div>
+                        <div class="conWatchTitle">
+                            <img src="images/extraction.png" alt="axe">
+                            <div class="bg-black/20 backdrop-blur-md">
+                                <i class="fa-sharp fa-solid fa-play " style="color: #fff; "></i>
+                            </div>
+                            <span>The Old Guard</span>
+                            <div class="playBar flex ">
+                                <hr class="w-10/12">
+                                <hr class="w-2/12">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
